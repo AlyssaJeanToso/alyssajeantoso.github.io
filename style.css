@@ -1,0 +1,187 @@
+:root{
+  --paper: #f8f5ee;
+  --paper-raised: #ffffff;
+  --ink: #232620;
+  --ink-dim: #6b6f66;
+  --line: #dedad0;
+  --teal: #1f5c52;
+  --gold: #b8912f;
+}
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter', sans-serif;
+  line-height:1.6;
+}
+::selection{ background:var(--teal); color:#fff; }
+
+.sheet{
+  max-width:960px;
+  margin:48px auto;
+  background:var(--paper-raised);
+  border:1px solid var(--line);
+  box-shadow:0 2px 24px rgba(35,38,32,0.06);
+  display:grid;
+  grid-template-columns:280px 1fr;
+}
+@media (max-width:760px){
+  .sheet{ grid-template-columns:1fr; margin:0; border:none; }
+}
+
+/* SIDEBAR */
+.side{
+  background:var(--teal);
+  color:#f2efe6;
+  padding:52px 32px;
+}
+.side .initials{
+  width:88px; height:88px; border-radius:50%;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.35);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Newsreader', serif;
+  font-size:34px;
+  margin-bottom:22px;
+}
+.side h1{
+  font-family:'Newsreader', serif;
+  font-weight:500;
+  font-size:30px;
+  margin:0 0 4px;
+  line-height:1.15;
+}
+.side .role{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:28px;
+}
+
+.side-block{ margin-bottom:30px; }
+.side-block h2{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:rgba(242,239,230,0.55);
+  margin:0 0 12px;
+}
+.side-block ul{ list-style:none; margin:0; padding:0; }
+.side-block li{
+  font-size:14px;
+  padding:5px 0;
+  color:#e8e4d8;
+}
+.side-block li span{
+  display:block;
+  font-size:12px;
+  color:rgba(242,239,230,0.55);
+}
+
+.tags{ display:flex; flex-wrap:wrap; gap:6px; }
+.tag{
+  font-size:12px;
+  font-family:'IBM Plex Mono', monospace;
+  padding:5px 10px;
+  border:1px solid rgba(242,239,230,0.3);
+  border-radius:100px;
+  color:#e8e4d8;
+}
+
+/* MAIN */
+.main{ padding:52px 48px; }
+@media (max-width:760px){ .main{ padding:36px 24px; } .side{ padding:36px 24px; } }
+
+.main section{ margin-bottom:40px; }
+.main section:last-child{ margin-bottom:0; }
+
+.sec-title{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--gold);
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin:0 0 18px;
+}
+.sec-title::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background:var(--line);
+}
+
+.summary p{
+  font-family:'Newsreader', serif;
+  font-size:19px;
+  color:#3a3d35;
+  max-width:560px;
+  margin:0;
+}
+
+.entry{
+  display:grid;
+  grid-template-columns:130px 1fr;
+  gap:20px;
+  padding:18px 0;
+  border-top:1px solid var(--line);
+}
+.entry:first-of-type{ border-top:none; padding-top:0; }
+@media (max-width:520px){ .entry{ grid-template-columns:1fr; gap:4px; } }
+
+.entry .when{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  color:var(--ink-dim);
+  padding-top:3px;
+}
+.entry h3{
+  font-family:'Newsreader', serif;
+  font-weight:600;
+  font-size:19px;
+  margin:0 0 2px;
+}
+.entry .org{
+  font-size:13px;
+  color:var(--teal);
+  font-weight:600;
+  margin-bottom:8px;
+}
+.entry p{
+  margin:0;
+  font-size:14.5px;
+  color:var(--ink-dim);
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px 32px;
+}
+@media (max-width:520px){ .skills-grid{ grid-template-columns:1fr; } }
+.skill-row .label{
+  display:flex; justify-content:space-between;
+  font-size:14px; margin-bottom:6px;
+}
+.skill-row .label span:last-child{ color:var(--ink-dim); font-family:'IBM Plex Mono', monospace; font-size:12px; }
+.bar{ height:4px; background:var(--line); border-radius:4px; overflow:hidden; }
+.bar i{ display:block; height:100%; background:var(--teal); }
+
+footer{
+  text-align:center;
+  padding:28px;
+  font-family:'IBM Plex Mono', monospace;
+  font-size:11px;
+  color:var(--ink-dim);
+}
+
+@media print{
+  body{ background:#fff; }
+  .sheet{ box-shadow:none; margin:0; border:none; }
+}
