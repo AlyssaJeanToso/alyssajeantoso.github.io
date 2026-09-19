@@ -1,125 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alyssa Jean — Résumé</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alyssa Jean | BSCS Student</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="sheet">
+    <!-- ================= NAVIGATION ================= -->
+    <header class="navbar">
 
-  <aside class="side">
-    <div class="initials">AJ</div>
-    <h1>Alyssa Jean</h1>
-    <div class="role"> Web Developer</div>
+        <div class="nav-container">
 
-    <div class="side-block">
-      <h2>Contact</h2>
-      <ul>
-        <li>alyssatoso@gmail.com<span>Email</span></li>
-        <li>09502619251<span>Phone</span></li>
-        <li>Tudela, Ozamis City, Misamis Occidental<span>Location</span></li>
-        <li>github.com/AlyssaJeanToso<span>GitHub</span></li>
-      </ul>
+            <a href="#home" class="logo">AJ<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link">Home</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn" id="aboutDropdownBtn">
+                        About
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="dropdown-menu" id="aboutDropdown">
+                        <a href="#about">About Me</a>
+                        <a href="#education">Education</a>
+                    </div>
+                </div>
+
+                <a href="#skills" class="nav-link">Skills</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn" id="projectsDropdownBtn">
+                        Projects
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="dropdown-menu" id="projectsDropdown">
+                        <a href="#projects">My Projects</a>
+                        <a href="#contact">Let's Work</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button class="nav-talk" id="talkBtn">
+                    Let's Talk <span>↗</span>
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-container">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        BSCS · 3RD YEAR
+                    </p>
+
+                    <h1>
+                        Alyssa<br>
+                        <em>Jean.</em>
+                    </h1>
+
+                    <p class="hero-description">
+                        A Computer Science student who enjoys creating
+                        simple, useful, and visually appealing digital
+                        experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                            <span>↗</span>
+                        </a>
+
+                        <a href="#about" class="btn btn-outline">
+                            More About Me
+                        </a>
+
+                    </div>
+
+                    <div class="hero-socials">
+
+                        <a href="mailto:alyssatoso07@gmail.com">
+                            Email
+                        </a>
+
+                        <span>•</span>
+
+                        <a href="https://github.com/alyssajeantoso" target="_blank">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image-wrapper">
+
+                    <div class="image-decoration"></div>
+
+                    <img
+                        src="images/profile.jfif"
+                        alt="Alyssa Jean"
+                        class="hero-image"
+                    >
+
+                    <div class="image-caption">
+                        <span>01</span>
+                        <span>CREATIVE · CURIOUS · DETERMINED</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section about-section" id="about">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    <span>01</span>
+                    About Me
+                </div>
+
+                <div class="about-grid">
+
+                    <div>
+                        <h2>
+                            Turning ideas into
+                            <em>digital experiences.</em>
+                        </h2>
+                    </div>
+
+                    <div class="about-text">
+
+                        <p>
+                            Hello! I'm Alyssa Jean, a third-year
+                            Bachelor of Science in Computer Science
+                            student at Tangub City Global College.
+                        </p>
+
+                        <p>
+                            I enjoy learning about web development,
+                            programming, interface design, and
+                            creating projects that solve simple
+                            real-world problems.
+                        </p>
+
+                        <p>
+                            I am continuously improving my skills
+                            through school projects, personal projects,
+                            and hands-on experimentation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <strong>BSCS</strong>
+                        <span>Program</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>3rd</strong>
+                        <span>Year Student</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>TCGC</strong>
+                        <span>College</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+        <section class="section education-section" id="education">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    <span>02</span>
+                    Education
+                </div>
+
+                <div class="education-card">
+
+                    <div class="education-number">
+                        01
+                    </div>
+
+                    <div class="education-content">
+
+                        <p class="small-label">
+                            CURRENT EDUCATION
+                        </p>
+
+                        <h3>
+                            Bachelor of Science
+                            in Computer Science
+                        </h3>
+
+                        <p>
+                            Tangub City Global College
+                        </p>
+
+                        <span>
+                            3rd Year · Computer Science
+                        </span>
+
+                    </div>
+
+                    <div class="education-arrow">
+                        ↗
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section skills-section" id="skills">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    <span>03</span>
+                    Skills
+                </div>
+
+                <div class="skills-heading">
+
+                    <h2>
+                        Things I enjoy
+                        <em>working with.</em>
+                    </h2>
+
+                    <p>
+                        These are some of the technologies and skills
+                        I have learned and continue to improve.
+                    </p>
+
+                </div>
+
+
+                <div class="skills-list">
+
+                    <div class="skill-item">
+
+                        <div class="skill-top">
+                            <span>HTML & CSS</span>
+                            <span>90%</span>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-top">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-top">
+                            <span>PHP & MySQL</span>
+                            <span>75%</span>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-top">
+                            <span>UI / UX Design</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-top">
+                            <span>GitHub</span>
+                            <span>80%</span>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="section projects-section" id="projects">
+
+            <div class="section-container">
+
+                <div class="section-label">
+                    <span>04</span>
+                    Selected Projects
+                </div>
+
+                <div class="projects-heading">
+
+                    <h2>
+                        A few things I've
+                        <em>built.</em>
+                    </h2>
+
+                    <p>
+                        School and personal projects that helped me
+                        practice programming, design, and problem solving.
+                    </p>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card project-featured">
+
+                        <div class="project-top">
+                            <span>01</span>
+                            <span>WEB APPLICATION</span>
+                        </div>
+
+                        <h3>
+                            FindIT
+                        </h3>
+
+                        <p>
+                            A Lost & Found web application designed
+                            to help users report, manage, and find
+                            lost items.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a
+                            href="https://alyssajeantoso.github.io/lost_and_found/"
+                            target="_blank"
+                            class="project-link"
+                        >
+                            View Project ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span>02</span>
+                            <span>PORTFOLIO</span>
+                        </div>
+
+                        <h3>
+                            Personal Portfolio
+                        </h3>
+
+                        <p>
+                            A personal website created to showcase
+                            my skills, projects, education, and
+                            journey as a Computer Science student.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#home" class="project-link">
+                            Current Website ↗
+                        </a>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span>03</span>
+                            <span>GAME</span>
+                        </div>
+
+                        <h3>
+                            Block Tetris
+                        </h3>
+
+                        <p>
+                            A simple browser-based block game created
+                            to practice JavaScript logic, user
+                            interaction, and interface design.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <span class="project-link">
+                            School Project
+                        </span>
+
+                    </article>
+
+
+                    <!-- PROJECT 4 -->
+                    <article class="project-card">
+
+                        <div class="project-top">
+                            <span>04</span>
+                            <span>SCHOOL WORK</span>
+                        </div>
+
+                        <h3>
+                            System Projects
+                        </h3>
+
+                        <p>
+                            Different school projects involving
+                            programming, databases, system analysis,
+                            and web development.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Programming</span>
+                            <span>Database</span>
+                            <span>Web</span>
+                        </div>
+
+                        <span class="project-link">
+                            More Projects
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section contact-section" id="contact">
+
+            <div class="section-container">
+
+                <div class="contact-box">
+
+                    <div class="contact-number">
+                        05
+                    </div>
+
+                    <div class="contact-content">
+
+                        <p class="small-label">
+                            HAVE A PROJECT OR QUESTION?
+                        </p>
+
+                        <h2>
+                            Let's make something
+                            <em>together.</em>
+                        </h2>
+
+                        <p>
+                            Have an idea, project, or simply want
+                            to say hello? Send me a message.
+                        </p>
+
+                        <button
+                            class="contact-button"
+                            id="contactTalkBtn"
+                        >
+                            Let's Talk
+                            <span>↗</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <div class="footer-logo">
+                    AJ<span>.</span>
+                </div>
+
+                <p>
+                    Computer Science Student · TCGC
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="footer-copy">
+                © 2026 Alyssa Jean
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= CONTACT MODAL ================= -->
+    <div class="modal-overlay" id="contactModal">
+
+        <div class="contact-modal">
+
+            <button
+                class="modal-close"
+                id="closeBtn"
+                aria-label="Close contact form"
+            >
+                ×
+            </button>
+
+            <div class="modal-header">
+
+                <p class="small-label">
+                    SEND A MESSAGE
+                </p>
+
+                <h2>
+                    Let's <em>talk.</em>
+                </h2>
+
+                <p>
+                    Fill out the form below and your message
+                    will be sent directly to my email.
+                </p>
+
+            </div>
+
+
+            <!-- EMAILJS FORM -->
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="send-button"
+                >
+                    Send Message
+                    <span>↗</span>
+                </button>
+
+            </form>
+
+        </div>
+
     </div>
 
-    <div class="side-block">
-      <h2>Education</h2>
-      <ul>
-        <li>3rd Year Student<span>Tangub City Global College</span></li>
-        <li> <span>2026-2027</span></li>
-      </ul>
-    </div>
 
-    <div class="side-block">
-      <h2>Skills</h2>
-      <div class="tags">
-        <span class="tag">Teamwork</span>
-        <span class="tag">Time Management</span>
-        <span class="tag">Responsive Web Design</span>
-        <span class="tag">Adaptability</span>
-      </div>
-    </div>
+    <!-- ================= EMAILJS ================= -->
 
-    <div class="side-block">
-      <h2>Languages</h2>
-      <ul>
-        <li>English<span>Functional English</span></li>
-        <li>Filipino<span>Native</span></li>
-      </ul>
-    </div>
-  </aside>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <main class="main">
-
-    <section class="summary">
-      <p class="sec-title">Profile</p>
-      <p>I am a Computer Science student with a strong interest in web development and technology. I am a hardworking, dependable, and motivated learner who enjoys solving problems and continuously improving my technical skills. I am seeking opportunities to gain hands-on experience, expand my knowledge, and contribute to meaningful projects while growing as a future IT professional.
-</p>
-    </section>
-
-    <section>
-      <p class="sec-title">Experience</p>
-      <div class="entry">
-        <div class="when">2024</div>
-        <div>
-          <h3>Computer Science Student</h3>
-          <div class="org">Tangub City Global College</div>
-          <p>Developing foundational knowledge in programming, web development, and problem-solving through coursework and hands-on projects. Collaborating with classmates on assignments while continuously improving technical and communication skills.</p>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="when">2025</div>
-        <div>
-          <h3>Block Tetris</h3>
-          <div class="org">Academic Project</div>
-          <p>Developed Block Tetris, a game application as part of a second-year Computer Science project. Designed and implemented the application's core gameplay and user interface while applying programming, problem-solving, and software development principles.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <p class="sec-title">Projects</p>
-      <div class="entry">
-        <div class="when">2026</div>
-        <div>
-          <h3>Turn-Based Educational Game System (TBEGS)</h3>
-          <div class="org">Academic Group Project</div>
-          <p>Currently developing the Turn-Based Educational Game System (TBEGS) with a team as part of a Computer Science project. Contributing to the design and development of the application while collaborating with group members to create an interactive educational game that enhances learning through turn-based gameplay.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <p class="sec-title">Proficiency</p>
-      <div class="skills-grid">
-        <div class="skill-row">
-          <div class="label"><span>Skill One</span><span>90%</span></div>
-          <div class="bar"><i style="width:90%"></i></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Skill Two</span><span>80%</span></div>
-          <div class="bar"><i style="width:80%"></i></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Skill Three</span><span>85%</span></div>
-          <div class="bar"><i style="width:80%"></i></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Skill Four</span><span>95%</span></div>
-          <div class="bar"><i style="width:65%"></i></div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-</div>
-
-<footer>Alyssa Jean — Résumé · Built with HTML &amp; CSS</footer>
+    <!-- YOUR JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
